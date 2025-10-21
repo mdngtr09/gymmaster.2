@@ -74,10 +74,7 @@ GymMaster/
 │ │ └── divisao.html
 └── pom.xml
 
-yaml
-Copiar código
 
----
 
 ## 🚀 Como Executar o Projeto
 
@@ -91,7 +88,6 @@ Copiar código
 
 No arquivo `src/main/resources/application.properties`:
 
-```properties
 spring.datasource.url=jdbc:mysql://localhost:3306/gymmaster
 spring.datasource.username=root
 spring.datasource.password=sua_senha
@@ -99,10 +95,11 @@ spring.jpa.hibernate.ddl-auto=update
 spring.jpa.show-sql=true
 server.port=8081
 
+
 A aplicação ficará disponível em:
-
-
 http://localhost:8081
+
+
 🌐 Rotas Principais da API
 Método	Endpoint	Descrição
 GET	/api/alunos	Lista todos os alunos
