@@ -1,0 +1,111 @@
+/* ====== ESTILO PADRÃO PARA TODAS AS PÁGINAS ====== */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  background-color: #f4f6f7;
+  color: #2d3436;
+}
+
+/* ====== CABEÇALHO ====== */
+header {
+  background-color: #8e44ad;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+/* ====== CONTEÚDO PRINCIPAL ====== */
+main {
+  padding: 40px;
+  max-width: 800px;
+  margin: auto;
+}
+
+/* ====== TABELAS ====== */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+th, td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #8e44ad;
+  color: white;
+}
+
+tr:hover {
+  background-color: #f0e6f7;
+}
+
+/* ====== FORMULÁRIOS ====== */
+form {
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  margin-top: 30px;
+}
+
+form input, form select, form button {
+  font-family: 'Poppins', sans-serif;
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+form select[multiple] {
+  height: 120px;
+}
+
+form button {
+  background-color: #8e44ad;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+form button:hover {
+  background-color: #732d91;
+}
+
+/* ====== BOTÕES DE AÇÃO NA TABELA ====== */
+button.editar, button.excluir {
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+  transition: 0.2s;
+  font-size: 0.9em;
+}
+
+button.editar {
+  background-color: #3498db;
+}
+
+button.editar:hover {
+  background-color: #2e86c1;
+}
+
+button.excluir {
+  background-color: #e74c3c;
+}
+
+button.excluir:hover {
+  background-color: #c0392b;
+}

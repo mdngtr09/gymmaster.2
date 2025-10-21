@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>GymMaster — Exercícios</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/exercicios.css">
+</head>
+<body>
+<header class="topbar">
+    <div class="brand">💪 GymMaster</div>
+    <nav class="mainnav">
+        <a href="/">Início</a>
+        <a href="/alunos">Alunos</a>
+        <a href="/planos">Planos</a>
+        <a href="/exercicios"class="active">Exercícios</a>
+        <a href="/divisoes">Divisão Muscular</a>
+    </nav>
+</header>
+
+<main class="container">
+    <section class="panel">
+        <h2>Cadastrar Exercício</h2>
+        <form id="formExercicio" class="form">
+            <input id="exercicioId" type="hidden">
+            <input id="nomeExercicio" placeholder="Nome do exercício" required>
+            <input id="grupoMuscular" placeholder="Grupo muscular (ex: Peito, Costas)" required>
+            <textarea id="descricaoExercicio" placeholder="Descrição (opcional)"></textarea>
+            <div class="form-actions">
+                <button type="submit">Salvar</button>
+                <button type="button" id="resetExercicio" class="ghost">Limpar</button>
+            </div>
+        </form>
+    </section>
+
+    <section class="panel">
+        <h2>Exercícios</h2>
+        <table id="tabelaExercicios" class="table">
+            <thead>
+            <tr><th>ID</th><th>Nome</th><th>Grupo</th><th>Ações</th></tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </section>
+</main>
+
+<script src="/exercicios.js"></script>
+</body>
+</html>
