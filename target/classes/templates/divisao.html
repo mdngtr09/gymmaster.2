@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>GymMaster — Divisão Muscular</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/divisao.css">
+</head>
+<body>
+<header class="topbar">
+    <div class="brand">💪 GymMaster</div>
+    <nav class="mainnav">
+        <a href="/">Início</a>
+        <a href="/alunos">Alunos</a>
+        <a href="/planos">Planos</a>
+        <a href="/exercicios">Exercícios</a>
+        <a href="/divisao" class="active">Divisão Muscular</a>
+    </nav>
+</header>
+
+<main class="container">
+    <section class="panel">
+        <h2>Cadastrar Divisão de Treino</h2>
+        <form id="formDivisao" class="form">
+            <input id="divisaoId" type="hidden">
+            <input id="nomeDivisao" placeholder="Nome da divisão (ex: Treino A)" required>
+
+            <!-- Select do aluno -->
+            <label for="alunoId">Aluno:</label>
+            <select id="alunoId" required>
+                <option value="">Selecione um aluno</option>
+            </select>
+
+            <!-- Multi-select de exercícios -->
+            <label for="exercicios" class="mt-2">Exercícios:</label>
+            <select id="exercicios" multiple size="5" required>
+                <!-- Opções serão carregadas pelo JS -->
+            </select>
+
+            <div class="form-actions mt-2">
+                <button type="submit">Salvar</button>
+                <button type="button" id="resetDivisao" class="ghost">Limpar</button>
+            </div>
+        </form>
+    </section>
+
+    <section class="panel">
+        <h2>Divisões</h2>
+        <table id="tabelaDivisoes" class="table">
+            <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nome</th>
+                <th>Aluno</th>
+                <th>Exercícios</th>
+                <th>Ações</th>
+            </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </section>
+</main>
+
+<script src="/divisao.js"></script>
+</body>
+</html>
