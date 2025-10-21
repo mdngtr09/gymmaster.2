@@ -123,7 +123,7 @@ Página	Caminho	Função
 Desenvolvido por:
 Murillo Dias Nunes
 💼 Projeto Integrador — Sistema de Academia
-📚 Curso Técnico em Informática / Desenvolvimento de Sistemas
+📚 Curso Técnico em Desenvolvimento de Sistemas
 
 📄 Licença
 Este projeto é de uso livre para fins educacionais e não possui fins comerciais.
